@@ -1,0 +1,140 @@
+📘 The Code Magazine
+
+The Basic Language of the Web: HTML
+
+Posted by Laura Jones on Monday, June 21st 2027
+
+All modern websites and web applications are built using three fundamental technologies: HTML, CSS and JavaScript. These are the languages of the web.
+
+In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.
+
+What is HTML?
+
+HTML stands for HyperText Markup Language. It's a markup language that web developers use to structure and describe the content of a webpage (not a programming language).
+
+HTML consists of elements that describe different types of content: paragraphs, links, headings, images, video, etc. Web browsers understand HTML and render HTML code as websites.
+
+In HTML, each element is made up of 3 parts:
+
+The opening tag
+The closing tag
+The actual element
+You can learn more at the MDN Web Docs.
+
+Why should you learn HTML?
+
+There are countless reasons for learning the fundamental language of the web. Here are 5 of them:
+
+To be able to use the fundamental web dev language
+To hand-craft beautiful websites instead of relying on tools like Worpress or Wix
+To build web applications
+To impress friends
+To have fun 😃
+
+Hopefully you learned something new here. See you next time!
+
+
+
+
+ Week 1: HTML/CSS/JS Projects – Omnifood + The Code Magazine Project: AI-Powered Food Website (Single Page)  Built using HTML, CSS, and JavaScript – no frameworks.  Created a simple educational page to display Information and visuals for HTML, CSS, and JavaScript basics. urls(https://app.netlify.com/projects/omnifood-aqsa/overview , https://app.netlify.com/projects/inspiring-sopapillas-f45ebc)   Week 2: Node.js CRUD Operations , Week 3: Material UI Table + React Component Development (Displayed dynamic data from API patient-list, and progressNotes) Week 4: Fetching External APIs  Integrated external Patient APIs using axios in React. 
+
+
+Monthly Report:
+1) Create and design a login page.
+if a user enter url without trying a signin it will redirect to the sigin page.
+Handle indirect users gracefully.
+2) Deployment in local environment.
+
+3)if a user directly access the app without login using url then it will redirect to the login page.
+
+4) Endpoint for geting patient with the patientId.and also fetch on frontend plus design a card to show patient name , gender and dob.
+
+
+todays task 
+add dob on card 
+make changes in claimsheet
+
+433087
+
+
+
+pm2 stop syncare-backend
+upload the zip to syncare-backend
+cd /home/syncarewarshad/public_html/syncare-backend
+pm2 start syncare-backend
+pm2 logs
+nano controller/progressNotetype_controller.js
+change t -> T
+CTRL O, CTRL M, CTRL X
+
+
+npm run build
+
+upload zip to syncare-frontend
+extract
+move the contents to base directory which is syncare-frontend
+
+systemctl restart nginx
+
+669395
+371044
+611366
+882834
+155181
+601371
+765346
+357159
+314706
+588770
+
+
+Medication screen
+order by start date, dsc
+description schedules , dose , frequency 
+merge strength and dum
+remove actions btn
+
+progressnote table
+
+time: ptrogressnote type , progressnote
+
+
+we add two filter 1) progressnote type 
+2: date dropdown have three opt
+3days bydefault
+1week
+1month
+all
+
+create template for soap note 
+Description: 3 empty line
+vitals:  date ,type ,value
+
+
+todays task:::  16/7/25
+
+✅changes push on GitHub
+
+ Medication screen
+✅order by start date, dsc
+✅description schedules , dose , frequency 
+✅merge strength and dum
+✅remove actions btn
+
+
+todays task::: 17/7/25
+
+✅progressNotes ko thk krna hai.
+✅patient card ka ui betr krna hai.
+
+
+todays task:::: 18/7/25
+✅patient sidebar ko thk krna hai.
+we add two filter 1) progressnote type 
+2: date dropdown have three opt
+3days bydefault
+1week
+1month
+all
+
+

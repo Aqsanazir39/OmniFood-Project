@@ -1,0 +1,43 @@
+Important! 📢
+1::::  Image is a inline block element.
+2::::  in inline elements padding and margins are not apllied vertically.
+
+
+For finding errors in html css we have website validator.w3 org
+
+for comparing code we have diffchecker website.🎟️
+
+If the selector is more complex than it may applay the rule.
+
+
+
+📎 4. <aside> — Extra Info (Jo side mein diya jaata hai)
+🔸 Kya hai?
+Aisa content jo main content se alag hai lekin related ho sakta hai.
+
+Jaise:
+
+Sidebar
+
+Ads
+
+Related links
+
+Extra tips
+
+
+📰 3. <article> — Independent Content (Jo akela samjha jaa sakay)
+🔸 Kya hai?
+Aisa content jo independently samjha ja sakta hai.
+
+Jaise:
+
+News post
+
+Blog post
+
+Forum post
+
+Comment
+
+Recipe
