@@ -1,61 +1,52 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-/* PAGE SECTIONS */
 body {
-  color: #444;
   font-family: sans-serif;
-  border-top: 10px solid #1098ad;
+  color: #444;
 }
-
+/* SECTIONS */
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
   position: relative;
+  border-top: 10px solid #1098ad;
 }
 
 .main-header {
   background-color: #f7f7f7;
+
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
-nav a:link {
-  font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
-}
-
 .post-header {
-  margin-bottom: 40px;
+  /* margin-bottom: 50px; */
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  /* box-sizing: border-box; */
 }
-/* SMALLER  */
+
+/* SMALLER ELEMENTS */
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: #1098ad;
-}
-p,
-li {
-  font-family: sans-serif;
-  /* color: #444; */
 }
 h1 {
   font-size: 26px;
   text-transform: uppercase;
+
   font-style: italic;
 }
 
@@ -63,7 +54,6 @@ h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
-
 h3 {
   font-size: 30px;
   margin-bottom: 20px;
@@ -71,63 +61,71 @@ h3 {
 }
 h4 {
   font-size: 20px;
-
   text-transform: uppercase;
   text-align: center;
-}
-p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-ul,
-ol {
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
-li {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
+p {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+  /* margin-bottom: 50px; */
+}
+li {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+article header p {
+  font-style: italic;
+}
 /* footer p {
   font-size: 16px;
 } */
 
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#copyright {
+  font-style: 16px;
+  background-color: #a5a3a3;
+}
 #author {
   font-style: italic;
   font-size: 18px;
 }
-#copyright {
-  font-size: 16px;
-}
-
-.related-author {
+.releted-post {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* ul{
+.releted {
   list-style: none;
-} */
-
-.related {
-  list-style: none;
+  margin-left: 0px;
 }
 
 li:first-child {
   font-weight: bold;
 }
 
-/* This is the missconception: this won't work */
-article p:first-child {
-  color: brown;
+li:last-child {
+  margin-bottom: 0;
 }
 
-/* Styling links */
+/* li:nth-child(even) {
+  color: aquamarine;
+} */
+/* This is misconception not working well */
+/* article p:last-child {
+  color: red;
+} */
+
+li {
+  font-size: 20px;
+}
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -136,20 +134,40 @@ a:link {
 a:visited {
   color: #1098ad;
 }
+
 a:hover {
   color: orangered;
   font-weight: bold;
-  text-decoration: underline orangered;
+  text-decoration: underline solid orangered;
 }
 
 a:active {
   background-color: black;
   font-style: italic;
 }
+
 /* LVHA */
 .post-img {
   width: 100%;
   height: auto;
+}
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.yellow {
+  color: yellow;
+}
+footer p {
+  color: green !important;
+} */
+
+nav {
+  font-size: 18px;
 }
 
 nav a:link {
@@ -158,52 +176,166 @@ nav a:link {
   padding: 20px;
   display: block; */
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 nav a:link:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 button {
   font-size: 22px;
   padding: 20px;
-  cursor: pointer;
   position: absolute;
-  /* bottom: 0;
-  left: 0; */
+  /* top: 50px;
+  left: 50px; */
   bottom: 50px;
-  right: 50px;
+  right: 0;
 }
 
-h1::first-letter {
+/* h1::first-letter {
   font-style: normal;
   margin-right: 5px;
-}
+} */
+
+/* h3 + p::first-line {
+  color: brown;
+} */
+
 h2 {
+  /* background-color: orange; */
   position: relative;
 }
 h2::after {
   content: "TOP";
-  background-color: #ffe70e;
   font-size: 16px;
+  background-color: #ffe70e;
+  font-weight: bold;
   display: inline-block;
   padding: 5px 10px;
-  color: #000;
   position: absolute;
-  top: -10px;
-  right: -25px;
+  top: -15px;
+  right: -30px;
 }
-/* Resolving Conflicts */
-/* #copyright {
-  color: red;
+
+/* FLOATS */
+/* 
+.author-img {
+  float: left;
+  margin-bottom: 20px;
 }
-.copyright {
-  color: aquamarine;
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
-.text {
-  color: antiquewhite !important;
+
+h1 {
+  float: left;
 }
-footer p {
-  color: cadetblue;
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 } */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#author {
+  margin-left: 15px;
+}
+
+.related-link:link {
+  /* margin-left: 10px; */
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.releted-author {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+/* FLEXBOX */
+/* .row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+article {
+  flex: 0 0 825px;
+}
+
+aside {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex: 0 0 300px;
+} */
+
+/* CSS Grid Container */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+.main-header {
+  grid-column: 1/-1;
+}
+aside {
+}
+
+article {
+}
+
+footer {
+  grid-column: 1/-1;
+  background-color: #7f7e7e;
+}

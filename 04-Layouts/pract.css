@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 80px;
+  width: 700px;
+  margin: 50px auto;
+  background-color: aqua;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:link {
+  margin-right: 30px;
+}
+nav {
+  position: sticky;
+  top: 90px;
+}
+/* nav a:link:last-child {
+  top: 50px;
+  right: 50px;
+} */

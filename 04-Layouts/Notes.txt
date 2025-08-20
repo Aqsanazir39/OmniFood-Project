@@ -41,3 +41,6 @@ Forum post
 Comment
 
 Recipe
+
+🎢 to line move up and down we use command alt + up arrow
+
