@@ -1,0 +1,32 @@
+.flex-container {
+  width: 800px;
+  height: 900px;
+  background-color: #e6e4e4;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  margin: auto;
+}
+.item-1 {
+  background-color: aqua;
+  height: 200px;
+  width: 150px;
+}
+
+.item-2 {
+  background-color: blueviolet;
+  height: 100px;
+  width: 50px;
+}
+
+.item-3 {
+  background-color: #d32121;
+  height: 500px;
+  width: 150px;
+}
+
+.item-4 {
+  background-color: #069c38;
+  height: 600px;
+  width: 200px;
+}
